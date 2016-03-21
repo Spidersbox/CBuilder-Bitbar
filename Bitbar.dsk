@@ -1,52 +1,62 @@
 [Modules]
-Module0=D:\Builder6\Projects\CBuilder-Bitbar\BitbarMain.cpp
-Count=1
+Module0=D:\Builder6\Projects\Bitbar\BitbarMain.cpp
+Module1=D:\Builder6\Projects\Bitbar\Bitbar.bpr
+Count=2
 EditWindowCount=1
 
-[D:\Builder6\Projects\CBuilder-Bitbar\BitbarMain.cpp]
+[D:\Builder6\Projects\Bitbar\BitbarMain.cpp]
 ModuleType=SourceModule
 FormState=1
-FormOnTop=0
+FormOnTop=1
 
-[D:\Builder6\Projects\CBuilder-Bitbar\ProjectGroup1.bpg]
+[D:\Builder6\Projects\Bitbar\Bitbar.bpr]
+ModuleType=SourceModule
 FormState=0
 FormOnTop=0
 
-[D:\Builder6\Projects\CBuilder-Bitbar\Bitbar.bpr]
+[D:\Builder6\Projects\ProjectGroup1.bpg]
 FormState=0
 FormOnTop=0
 
 [EditWindow0]
-ViewCount=1
-CurrentView=0
+ViewCount=2
+CurrentView=1
 View0=0
+View1=1
 CodeExplorer=CodeExplorer@EditWindow0
 MessageView=MessageView@EditWindow0
 ClassHierarchy=ClassHierarchy@EditWindow0
 Create=1
 Visible=1
 State=0
-Left=1053
-Top=359
-Width=872
+Left=572
+Top=288
+Width=708
 Height=677
 MaxLeft=-1
 MaxTop=-1
-ClientWidth=856
+ClientWidth=692
 ClientHeight=638
 LeftPanelSize=0
 LeftPanelClients=CodeExplorer@EditWindow0
-LeftPanelData=00000400010000000C000000436F64654578706C6F72657200000000000000000000000000000000000100000000000000000C000000436F64654578706C6F726572FFFFFFFF
+LeftPanelData=00000400010000000C000000436F64654578706C6F726572000000000000000000000000000000000001000000000000000000000000FFFFFFFF
 RightPanelSize=0
 BottomPanelSize=0
 BottomPanelClients=MessageView@EditWindow0
 BottomPanelData=00000400010000000B0000004D657373616765566965770000000000000000000000000000000000FFFFFFFF
 
 [View0]
-Module=D:\Builder6\Projects\CBuilder-Bitbar\BitbarMain.cpp
+Module=D:\Builder6\Projects\Bitbar\Bitbar.cpp
 CursorX=1
-CursorY=19
-TopLine=18
+CursorY=1
+TopLine=1
+LeftCol=1
+
+[View1]
+Module=D:\Builder6\Projects\Bitbar\BitbarMain.cpp
+CursorX=1
+CursorY=1
+TopLine=1
 LeftCol=1
 
 [Watches]
@@ -64,13 +74,13 @@ Visible=1
 State=2
 Left=0
 Top=0
-Width=1920
+Width=1280
 Height=123
 MaxLeft=-8
 MaxTop=-8
-MaxWidth=1936
+MaxWidth=1296
 MaxHeight=123
-ClientWidth=1920
+ClientWidth=1280
 ClientHeight=84
 
 [ProjectManager]
@@ -119,8 +129,8 @@ LRDockWidth=190
 Dockable=1
 SplitPos=85
 ArrangeBy=Name
-SelectedItem=Name
-ExpandedItems=
+SelectedItem=Caption
+ExpandedItems=Font,Font.Style
 HiddenCategories=
 
 [ObjectTree]
