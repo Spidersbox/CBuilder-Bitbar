@@ -1,6 +1,6 @@
 object BitbarForm: TBitbarForm
-  Left = 244
-  Top = 157
+  Left = 322
+  Top = 143
   Width = 739
   Height = 540
   Caption = 'Bitbar'
@@ -2490,6 +2490,7 @@ object BitbarForm: TBitbarForm
     82}
   Menu = MainMenu1
   OldCreateOrder = False
+  OnCloseQuery = FormCloseQuery
   PixelsPerInch = 96
   TextHeight = 15
   object PageControl1: TPageControl
@@ -2497,10 +2498,10 @@ object BitbarForm: TBitbarForm
     Top = 0
     Width = 723
     Height = 443
-    ActivePage = TabSendcoins
+    ActivePage = TabOverview
     Align = alClient
     Style = tsButtons
-    TabIndex = 1
+    TabIndex = 0
     TabOrder = 0
     object TabOverview: TTabSheet
       Caption = 'Overview'
@@ -2532,7 +2533,7 @@ object BitbarForm: TBitbarForm
         object Quant: TLabel
           Left = 64
           Top = 48
-          Width = 61
+          Width = 32
           Height = 15
           Caption = 'Quant'
         end
@@ -2877,6 +2878,10 @@ object BitbarForm: TBitbarForm
     Left = 632
     object File1: TMenuItem
       Caption = '&File'
+      object eXit1: TMenuItem
+        Caption = 'e&Xit'
+        OnClick = eXit1Click
+      end
     end
     object Settings1: TMenuItem
       Caption = '&Settings'
@@ -2886,6 +2891,27 @@ object BitbarForm: TBitbarForm
     end
     object Help1: TMenuItem
       Caption = '&Help'
+    end
+  end
+  object TrayIcon1: TTrayIcon
+    Visible = True
+    Hint = 'Bitbar (left click for options)'
+    PopupMenu = PopupMenu1
+    Hide = True
+    RestoreOn = imDoubleClick
+    PopupMenuOn = imRightClickUp
+    OnRestore = TrayIcon1Restore
+    Left = 588
+  end
+  object PopupMenu1: TPopupMenu
+    Left = 548
+    object Restore1: TMenuItem
+      Caption = '&Restore'
+      OnClick = Restore1Click
+    end
+    object exit2: TMenuItem
+      Caption = 'e&xit'
+      OnClick = exit2Click
     end
   end
 end

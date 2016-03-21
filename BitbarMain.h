@@ -12,6 +12,7 @@
 #include <Grids.hpp>
 #include <Menus.hpp>
 #include <Buttons.hpp>
+#include "trayicon.h"
 //---------------------------------------------------------------------------
 class TBitbarForm : public TForm
 {
@@ -51,6 +52,16 @@ __published:	// IDE-managed Components
         TLabel *Quant;
         TLabel *Label2;
         TLabel *Amt;
+        TMenuItem *eXit1;
+        TTrayIcon *TrayIcon1;
+        TPopupMenu *PopupMenu1;
+        TMenuItem *Restore1;
+        TMenuItem *exit2;
+        void __fastcall eXit1Click(TObject *Sender);
+        void __fastcall TrayIcon1Restore(TObject *Sender);
+        void __fastcall Restore1Click(TObject *Sender);
+        void __fastcall exit2Click(TObject *Sender);
+        void __fastcall FormCloseQuery(TObject *Sender, bool &CanClose);
 private:	// User declarations
 public:		// User declarations
         __fastcall TBitbarForm(TComponent* Owner);
