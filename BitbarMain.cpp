@@ -14,3 +14,6 @@ __fastcall TBitbarForm::TBitbarForm(TComponent* Owner)
 {
 }
 //---------------------------------------------------------------------------
+
+
+

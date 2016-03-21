@@ -1,14 +1,14 @@
 object BitbarForm: TBitbarForm
-  Left = 192
-  Top = 125
+  Left = 405
+  Top = 195
   Width = 787
-  Height = 585
+  Height = 540
   Caption = 'Bitbar'
-  Color = clBtnFace
-  Font.Charset = DEFAULT_CHARSET
+  Color = 8906997
+  Font.Charset = ANSI_CHARSET
   Font.Color = clWindowText
   Font.Height = -11
-  Font.Name = 'MS Sans Serif'
+  Font.Name = 'Comic Sans MS'
   Font.Style = []
   Icon.Data = {
     0000010005001010000001002000680400005600000018180000010020008809
@@ -2488,7 +2488,132 @@ object BitbarForm: TBitbarForm
     3C31C6040000002574455874646174653A6D6F6469667900323031332D30362D
     32305430353A31323A35362B30383A30304D6C7EB80000000049454E44AE4260
     82}
+  Menu = MainMenu1
   OldCreateOrder = False
   PixelsPerInch = 96
-  TextHeight = 13
+  TextHeight = 15
+  object PageControl1: TPageControl
+    Left = 0
+    Top = 0
+    Width = 771
+    Height = 443
+    ActivePage = TabTransactions
+    Align = alClient
+    Style = tsButtons
+    TabIndex = 3
+    TabOrder = 0
+    object TabOverview: TTabSheet
+      Caption = 'Overview'
+    end
+    object TabSendcoins: TTabSheet
+      Caption = 'Send coins'
+      ImageIndex = 1
+    end
+    object TabReceivecoins: TTabSheet
+      Caption = 'Receive coins'
+      ImageIndex = 2
+    end
+    object TabTransactions: TTabSheet
+      Caption = 'Transactions'
+      ImageIndex = 3
+      object DrawGrid1: TDrawGrid
+        Left = 0
+        Top = 25
+        Width = 763
+        Height = 385
+        Align = alClient
+        ColCount = 6
+        FixedCols = 0
+        TabOrder = 0
+        ColWidths = (
+          28
+          110
+          77
+          104
+          388
+          431)
+      end
+      object Panel2: TPanel
+        Left = 0
+        Top = 0
+        Width = 763
+        Height = 25
+        Align = alTop
+        BevelOuter = bvNone
+        ParentColor = True
+        TabOrder = 1
+        object DateBox: TComboBox
+          Left = 32
+          Top = 0
+          Width = 109
+          Height = 23
+          ItemHeight = 15
+          TabOrder = 0
+          Text = 'DateBox'
+        end
+        object TypeBox: TComboBox
+          Left = 140
+          Top = 0
+          Width = 81
+          Height = 23
+          ItemHeight = 15
+          TabOrder = 1
+          Text = 'TypeBox'
+        end
+        object SearchBox: TEdit
+          Left = 324
+          Top = 0
+          Width = 385
+          Height = 23
+          TabOrder = 2
+          Text = 'SearchBox'
+        end
+      end
+    end
+    object TabAddressbook: TTabSheet
+      Caption = 'Address book'
+      ImageIndex = 4
+      object StringGrid1: TStringGrid
+        Left = 0
+        Top = 0
+        Width = 763
+        Height = 410
+        Align = alClient
+        ColCount = 2
+        FixedColor = 1625080
+        FixedCols = 0
+        ParentColor = True
+        ScrollBars = ssVertical
+        TabOrder = 0
+        ColWidths = (
+          321
+          682)
+      end
+    end
+  end
+  object Panel1: TPanel
+    Left = 0
+    Top = 443
+    Width = 771
+    Height = 38
+    Align = alBottom
+    Caption = 'Panel1'
+    ParentColor = True
+    TabOrder = 1
+  end
+  object MainMenu1: TMainMenu
+    Left = 632
+    object File1: TMenuItem
+      Caption = '&File'
+    end
+    object Settings1: TMenuItem
+      Caption = '&Settings'
+    end
+    object Wallet1: TMenuItem
+      Caption = '&Wallet'
+    end
+    object Help1: TMenuItem
+      Caption = '&Help'
+    end
+  end
 end
